@@ -19,7 +19,7 @@ cublas-sys = { version = "0.1.0", path = "../cublas-sys" }
 clippy = { version = "0.0.35", optional = true }
 
 [dev-dependencies]
-collenchyma = { git = "https://github.com/alexandermorozov/collenchyma", default-features = false }
+collenchyma = { path = "../../collenchyma", default-features = false, features = ["native", "cuda"] }
 
 [features]
 dev = []
